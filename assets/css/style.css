@@ -350,14 +350,19 @@ a {
 }
 
 /* ===================feedback=============== */
-
-.feeback {
+.feedback {
   margin-top: 135px;
-  padding: 65px;
+  padding: 96px 0;
   background: #2e2100;
 }
-.feedback-item {
+.feedback-list {
   display: flex;
+  overflow: hidden;
+}
+.feedback-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
 }
 .feedback-item .avatar {
   width: 72px;
@@ -396,7 +401,7 @@ a {
   cursor: default;
 }
 
-.feedback-item.content {
+.feedback-item .content {
   width: 66%;
   margin-left: auto;
 }
